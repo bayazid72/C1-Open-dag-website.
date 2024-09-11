@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body, header, section, footer {
+    background: transparent;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    padding: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+nav ul, footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li, footer nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a, footer nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+nav ul li a:hover, footer nav ul li a:hover {
+    background-color: #2d9518;
+}
+
+nav ul li.logo img.logo-img {
+    height: 40px;
+    width: auto;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #444;
+    padding: 5px;
+    background: transparent;
+}
+
+.info-container, .docenten-list, .vakken {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.info-container section, .docenten-list li, .vak {
+    flex: 1 1 calc(50% - 20px);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f9f9f9;
+    box-sizing: border-box;
+}
+
+.docenten-list li, .vak {
+    margin-bottom: 20px;
+}
+
+.docenten-list strong {
+    display: block;
+    color: #333;
+    text-align: center;
+}
+
+img {
+    width: 75%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+button, footer .back-to-top {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button:hover, footer .back-to-top:hover {
+    background-color: #45a049;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.vakken {
+    gap: 20px;
+}
+
+.vak {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    flex: 1 1 calc(33% - 40px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.vak h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    padding: 20px;
+    margin: 20px auto;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-width: 500px;
+}
+
+.contact-info h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: #444;
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: #2d9518;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 400px) {
+    nav ul, footer nav ul, .info-container, .docenten-list, .vakken {
+        flex-direction: column;
+    }
+
+    nav ul li, footer nav ul li, .info-container section, .docenten-list li, .vak {
+        flex: 1 1 auto;
+    }
+}
+
+.back-to-top-link {
+    position: fixed; 
+    bottom: 20px;
+    right: 20px; 
+    z-index: 1000; 
+}
+
+.back-to-top {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.back-to-top:hover {
+    background-color: #45a049;
+}
